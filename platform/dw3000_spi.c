@@ -20,8 +20,8 @@ LOG_MODULE_DECLARE(dw3000, CONFIG_DW3000_LOG_LEVEL);
 
 #define TX_WAIT_RESP_NRF52840_DELAY 30
 
-#define DW_INST DT_INST(0, decawave_dw3000)
-#define DW_SPI	DT_PARENT(DT_INST(0, decawave_dw3000))
+#define DW_INST DT_INST(0, qorvo_dw3000)
+#define DW_SPI	DT_PARENT(DT_INST(0, qorvo_dw3000))
 
 static const struct device* spi;
 #if KERNEL_VERSION_MAJOR > 3                                                   \
