@@ -9,7 +9,7 @@
 
 LOG_MODULE_REGISTER(dw3000, CONFIG_DW3000_LOG_LEVEL);
 
-#define DW_INST DT_INST(0, decawave_dw3000)
+#define DW_INST DT_INST(0, qorvo_dw3000)
 
 static struct gpio_callback gpio_cb;
 static struct k_work dw3000_isr_work;
